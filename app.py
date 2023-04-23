@@ -20,7 +20,7 @@ age = st.slider("Age", 1, 80)
 systolic = st.number_input("Systolic", 70.0, 250.0)
 fasting_blood_sugar = st.number_input("Fasting Blood Sugar", 40.0, 520.0)
 tartar = st.selectbox("Tartar(N:0,Y:1)", [0,1])
-relaxation = st.number_input("Relaxation", 40.0, 150.0)
+# relaxation = st.number_input("Relaxation", 40.0, 150.0)
 
 def predict():
     float_features = [float(x) for x in [height_cm, hemoglobin, Gtp, triglyceride, waist_cm, HDL, ALT, systolic, fasting_blood_sugar, relaxation]]

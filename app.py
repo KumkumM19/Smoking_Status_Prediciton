@@ -6,7 +6,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 st.title('What is the Smoking Status of the person? :smoking:')
 
-gender = st.selectbox("Gender", ["M", "F"])
+gender = st.selectbox("Gender(M:0,F:1)", [0,1])
 height_cm = st.number_input("Height", 100.0, 200.0)
 hemoglobin = st.number_input("Hemoglobin", 4.0, 22.0)
 Gtp = st.number_input("Gtp", 1.0, 1000.0)
